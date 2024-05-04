@@ -12,7 +12,6 @@ end)
 
 realseat:GetPropertyChangedSignal("Occupant"):Connect(function()
     if realseat.Occupant then
-        handleUser(players:GetPlayerFromCharacter(realseat.Occupant.Parent))
         seatFilled = true
         CD.MaxActivationDistance = 0
         script.Parent.Parent.Parent.FillColour.Value = Color3.fromRGB(245, 30, 0)
